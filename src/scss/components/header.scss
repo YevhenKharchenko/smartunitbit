@@ -1,21 +1,31 @@
 .header {
-  background: #351bf8;
+  background: #090707;
   padding-top: 6px;
   padding-bottom: 6px;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10;
+  z-index: 5;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
 
   @include media(desktop) {
     padding-top: 11px;
     padding-bottom: 11px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.privacy-body {
+  .header {
+    background-image: none;
   }
 }
 
 .header-container {
   @include media(desktop) {
-    padding: 0 80px;
   }
 }
 
@@ -49,12 +59,13 @@
 
 .nav-list-link {
   padding: 4px 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  text-transform: uppercase;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,31 +77,6 @@
 }
 
 .nav-list-link.active {
-}
-
-.header-start-link {
-  display: none;
-
-  @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg, #3bbb8e 0%, #0a6847 100%);
-    border-radius: 4px;
-    padding: 8px 20px;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #fff;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background: #060f2b;
-      color: #fff;
-    }
-  }
 }
 
 .nav-btn {
@@ -107,14 +93,4 @@
 }
 
 .close-icon {
-}
-
-.close-btn {
-  display: none;
-  justify-content: center;
-  align-items: center;
-
-  @include media(desktop) {
-    display: none;
-  }
 }

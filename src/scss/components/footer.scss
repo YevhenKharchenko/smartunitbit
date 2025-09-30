@@ -1,5 +1,5 @@
 .footer {
-  background: #111;
+  background: rgba(18, 18, 18, 0.8);
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -13,36 +13,11 @@
   }
 }
 
-.footer-top-wrapper {
+.footer-nav {
   margin-bottom: 32px;
 
   @include media(desktop) {
     margin-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.footer-email-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    margin-bottom: 0;
-  }
-}
-
-.footer-nav {
-  @include media(desktop) {
   }
 }
 
@@ -82,7 +57,7 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #fff;
+  color: #d6d6d6;
 
   @include media(desktop) {
   }

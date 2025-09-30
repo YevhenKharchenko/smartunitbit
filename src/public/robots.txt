@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://upunitex.site/sitemap.xml
+Sitemap: https://smartunitbit.online/sitemap.xml
