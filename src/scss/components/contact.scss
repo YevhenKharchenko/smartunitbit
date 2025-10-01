@@ -19,7 +19,7 @@
   background-image: url(../img/contact/contact-bg-mob.png);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: auto;
+  background-size: cover;
 
   @include media(desktop) {
     background-image: url(../img/contact/contact-bg-desk.png);
