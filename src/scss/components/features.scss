@@ -14,12 +14,16 @@
   background-image: url(../img/features/features-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: auto;
+  background-size: cover;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
     padding-top: 100px;
     padding-bottom: 100px;
     background-image: url(../img/features/features-bg-desk.jpg);
+    max-width: 1440px;
   }
 }
 
