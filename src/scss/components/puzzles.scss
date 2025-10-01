@@ -1,92 +1,94 @@
-.contact-section {
-  background: #0c1c1a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @include media(desktop) {
-    padding-bottom: 120px;
-  }
-}
-
-.contact-container {
+.puzzles-section {
   @include media(desktop) {
   }
 }
 
-.contact-content-wrapper {
-  border-radius: 20px;
-  padding: 60px 16px;
-  background-image: url(../img/contact/contact-bg-mob.png);
+.puzzles-bg-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(../img/puzzles/puzzles-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto;
 
   @include media(desktop) {
-    background-image: url(../img/contact/contact-bg-desk.png);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../img/puzzles/puzzles-bg-desk.jpg);
   }
 }
 
-.contact-title {
-  text-align: center;
-
+.puzzles-container {
   @include media(desktop) {
   }
 }
 
-.contact-subtitle {
-  text-align: center;
-  margin-bottom: 32px;
-
+.puzzles-title {
   @include media(desktop) {
   }
 }
 
-.contact-list {
+.puzzles-subtitle {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.puzzles-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 
   @include media(desktop) {
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
   }
 }
 
-.contact-list-item {
+.puzzles-list-item {
+  backdrop-filter: blur(16px);
+  background: rgba(18, 18, 18, 0.8);
+  border: 1px solid rgba(0, 252, 140, 0.2);
+  padding: 19px;
+  width: 100%;
+  max-width: 343px;
+  min-height: 166px;
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+    max-width: 224px;
+    min-height: 166px;
+  }
+}
+
+.puzzles-icon {
+  @include media(desktop) {
+  }
+}
+
+.puzzles-list-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d6d6d6;
 
   @include media(desktop) {
   }
 }
 
-.contact-icon {
-  min-width: 24px;
-
-  @include media(desktop) {
-  }
-}
-
-.contact-item-link {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #fff;
-
-  @include media(desktop) {
-  }
-}
-
-.contact-link {
+.puzzles-crack-link {
   background: #004135;
   border: 1px solid #00fc8c;
   padding: 12px 20px;
   width: 100%;
-  max-width: 311px;
+  max-width: 343px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Inter', sans-serif;
@@ -97,7 +99,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   transition: all 0.3s ease-in-out;
 
   &:active,

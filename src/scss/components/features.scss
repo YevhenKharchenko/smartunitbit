@@ -1,0 +1,144 @@
+.features-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.features-section {
+  @include media(desktop) {
+  }
+}
+
+.features-bg-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../img/features/features-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../img/features/features-bg-desk.jpg);
+  }
+}
+
+.features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+
+.features-text-wrapper {
+  margin-bottom: 60px;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 594px;
+    margin: 0;
+  }
+}
+
+.features-title {
+  @include media(desktop) {
+  }
+}
+
+.features-subtitle {
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-text {
+  border-left: 1px solid #00fc8c;
+  padding: 8px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d6d6d6;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+}
+
+.features-list-item {
+  backdrop-filter: blur(16px);
+  background: rgba(18, 18, 18, 0.8);
+  border: 1px solid rgba(0, 252, 140, 0.2);
+  padding: 19px;
+  width: 100%;
+  max-width: 343px;
+  min-height: 208px;
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    max-width: 280px;
+    min-height: 232px;
+  }
+}
+
+.features-icon {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-list-item-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  text-transform: uppercase;
+  color: #00fc8c;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-list-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d6d6d6;
+
+  @include media(desktop) {
+  }
+}

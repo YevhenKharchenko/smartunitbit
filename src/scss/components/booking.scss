@@ -1,60 +1,66 @@
-.contact-section {
-  background: #0c1c1a;
+.booking-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.booking-section {
   padding-top: 60px;
   padding-bottom: 60px;
 
   @include media(desktop) {
-    padding-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
-.contact-container {
+.booking-container {
   @include media(desktop) {
   }
 }
 
-.contact-content-wrapper {
-  border-radius: 20px;
-  padding: 60px 16px;
-  background-image: url(../img/contact/contact-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
-
+.booking-content-wrapper {
   @include media(desktop) {
-    background-image: url(../img/contact/contact-bg-desk.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
   }
 }
 
-.contact-title {
-  text-align: center;
+.booking-text-wrapper {
+  margin-bottom: 40px;
 
+  @include media(desktop) {
+    width: 100%;
+    max-width: 594px;
+    margin: 0;
+  }
+}
+
+.booking-title {
   @include media(desktop) {
   }
 }
 
-.contact-subtitle {
-  text-align: center;
+.booking-subtitle {
+  margin-bottom: 25px;
+
+  @include media(desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-bottom: 32px;
 
   @include media(desktop) {
   }
 }
 
-.contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  margin-bottom: 48px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.contact-list-item {
+.booking-list-item {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -63,30 +69,23 @@
   }
 }
 
-.contact-icon {
-  min-width: 24px;
-
-  @include media(desktop) {
-  }
-}
-
-.contact-item-link {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.55556;
+.booking-list-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
   color: #fff;
 
   @include media(desktop) {
   }
 }
 
-.contact-link {
+.booking-book-link {
   background: #004135;
   border: 1px solid #00fc8c;
   padding: 12px 20px;
   width: 100%;
-  max-width: 311px;
+  max-width: 343px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Inter', sans-serif;
@@ -97,7 +96,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   transition: all 0.3s ease-in-out;
 
   &:active,
@@ -107,9 +105,19 @@
 
   @include media(desktop) {
     max-width: max-content;
+    margin-left: 0;
 
     &:hover {
       background: rgba(255, 255, 255, 0.2);
     }
+  }
+}
+
+.booking-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin: 0;
   }
 }

@@ -1,0 +1,145 @@
+.story-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.story-section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+}
+
+.story-container {
+  @include media(desktop) {
+  }
+}
+
+.story-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+
+.story-title-wrapper {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 376px;
+    margin: 0;
+    order: 2;
+  }
+}
+
+.story-title {
+  @include media(desktop) {
+  }
+}
+
+.story-subtitle {
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin-bottom: 68px;
+  }
+}
+
+.story-percent {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.19048;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.story-bots-text {
+  border-left: 1px solid #00fc8c;
+  padding: 4px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  text-transform: uppercase;
+  color: #00fc8c;
+  max-width: 144px;
+
+  @include media(desktop) {
+  }
+}
+
+.story-text-wrapper {
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    width: 100%;
+    max-width: 376px;
+    margin: 0;
+    order: 3;
+  }
+}
+
+.story-text {
+  border-left: 1px solid #00fc8c;
+  padding: 8px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d6d6d6;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin-bottom: 126px;
+  }
+}
+
+.story-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.story-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.story-list-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.story-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin: 0;
+    order: 1;
+  }
+}
